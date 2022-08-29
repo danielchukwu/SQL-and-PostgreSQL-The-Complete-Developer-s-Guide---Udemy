@@ -8,3 +8,9 @@
 -- N8               Nokia              150           7543
 
 -- > Write a query that will print the name and price of all the phones that sold greater than 5000 units
+
+
+-- solution
+
+SELECT name, manufacturer  FROM phones
+WHERE manufacturer IN ('Apple', 'Samsung');
