@@ -7,10 +7,9 @@
 -- S5620            Samsung            250           2385 
 -- N8               Nokia              150           7543
 
--- > Write a query that will print the name and price of all the phones that sold greater than 5000 units
+-- > write a query that will select the name and manufacturer for all phones created by Apple or Samsung
 
-
--- solution
+-- Solution
 
 SELECT name, manufacturer  FROM phones
-WHERE units_sold > 5000;
+WHERE manufacturer IN ('Apple', 'Samsung');

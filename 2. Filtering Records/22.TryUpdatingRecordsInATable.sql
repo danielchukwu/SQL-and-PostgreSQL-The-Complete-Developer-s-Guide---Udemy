@@ -7,10 +7,16 @@
 -- S5620            Samsung            250           2385 
 -- N8               Nokia              150           7543
 
--- > Write a query that will print the name and price of all the phones that sold greater than 5000 units
+-- > Write 2 seperate queries
+-- > The first query should update the units_sold of the phone with name N8 to 8543
+-- > The second query should select all rows and columns of phones table
 
 
--- solution
+-- Solution
 
-SELECT name, manufacturer  FROM phones
-WHERE units_sold > 5000;
+
+-- SELECT * FROM phones
+
+UPDATE phones
+SET units_sold = 8543
+WHERE name = 'N8'
