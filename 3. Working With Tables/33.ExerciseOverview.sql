@@ -31,7 +31,7 @@
 
 -- SELECT * FROM boats;
 
-
+-- 1
 -- CREATE TABLE crew_members (
 --   id SERIAL PRIMARY KEY,
 --   first_name VARCHAR(50),
@@ -45,5 +45,10 @@
 -- VALUES ('Alex', 1), ('Lucia', 1), ('Ari', 2);
 
 
-SELECT *  FROM crew_members
-JOIN boats ON boats.id = crew_members.boat_id;
+-- SELECT *  FROM crew_members
+-- JOIN boats ON boats.id = crew_members.boat_id;
+
+-- 2
+SELECT * FROM crew_members
+-- JOIN boats ON boats.id = crew_members.boat_id
+WHERE crew_members.boat_id = 1;
