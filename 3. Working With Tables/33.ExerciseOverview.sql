@@ -16,3 +16,34 @@
 
 -- solution
 
+
+-- CREATE TABLE boats (
+--   id SERIAL PRIMARY KEY,
+--   name VARCHAR(50)
+-- );
+
+
+-- INSERT INTO boats(name)
+-- VALUES
+--   ('Rogue Wave'),
+--   ('Harbor Master');
+
+
+-- SELECT * FROM boats;
+
+
+-- CREATE TABLE crew_members (
+--   id SERIAL PRIMARY KEY,
+--   first_name VARCHAR(50),
+--   boat_id INTEGER REFERENCES boats(id)
+-- );
+
+
+-- SELECT * FROM crew_members;
+
+-- INSERT INTO crew_members(first_name, boat_id)
+-- VALUES ('Alex', 1), ('Lucia', 1), ('Ari', 2);
+
+
+SELECT *  FROM crew_members
+JOIN boats ON boats.id = crew_members.boat_id;
