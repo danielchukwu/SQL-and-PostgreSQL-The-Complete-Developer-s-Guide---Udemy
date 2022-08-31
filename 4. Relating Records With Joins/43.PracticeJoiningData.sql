@@ -13,6 +13,7 @@
 
 
 -- 1.
+-- create tables
 -- CREATE TABLE authors (
 --   id SERIAL PRIMARY KEY,
 --   name VARCHAR(20)
@@ -24,3 +25,25 @@
 --   author_id INTEGER REFERENCES authors(id)
 -- );
 
+
+-- insert data into tables
+-- INSERT INTO authors (name)
+-- VALUES 
+--   ('JK Rowling'), 
+--   ('Stephen King'), 
+--   ('Agatha Christie'), 
+--   ('Dr Suess');
+
+-- INSERT INTO books (title, author_id)
+-- VALUES 
+--   ('It', 2), 
+--   ('Chamber of Secrets', 1), 
+--   ('Cat and Hat', 4), 
+--   ('Affair at styles', 3);
+
+
+
+-- 2. 
+-- complete
+SELECT title, name FROM books
+JOIN authors ON authors.id = books.author_id;
