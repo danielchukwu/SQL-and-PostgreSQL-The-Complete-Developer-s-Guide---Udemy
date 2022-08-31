@@ -11,3 +11,16 @@
 -- 1. Implement both tables and insert their individual records
 -- 2. Write a query that will join together these two tables. For each book, print the title of the book and the name of the author 
 
+
+-- 1.
+-- CREATE TABLE authors (
+--   id SERIAL PRIMARY KEY,
+--   name VARCHAR(20)
+-- );
+
+-- CREATE TABLE books (
+--   id SERIAL PRIMARY KEY,
+--   title VARCHAR(50),
+--   author_id INTEGER REFERENCES authors(id)
+-- );
+
