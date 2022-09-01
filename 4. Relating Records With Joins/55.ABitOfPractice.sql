@@ -41,8 +41,16 @@
 --   book_id INTEGER REFERENCES books(id)
 -- );
 
-INSERT INTO reviews (rating, reviewer_id, book_id)
-VALUES 
-  (3, 1, 2),
-  (4, 2, 1),
-  (5, 3, 3);
+-- INSERT INTO reviews (rating, reviewer_id, book_id)
+-- VALUES 
+--   (3, 1, 2),
+--   (4, 2, 1),
+--   (5, 3, 3);
+
+
+
+-- THE MAIN QUERY
+SELECT title, name, rating
+FROM reviews 
+JOIN books ON books.id = reviews.book_id
+JOIN authors ON authors.id = reviews.reviewer_id AND books.author_id = reviews.reviewer_id
