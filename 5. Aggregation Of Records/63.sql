@@ -22,3 +22,28 @@
 --    Affair at
 -- 4  Cat in the 
 
+-- Solution
+
+
+-- CREATE TABLE authors (
+--   id SERIAL PRIMARY KEY,
+--   name VARCHAR(50)
+-- );
+
+-- CREATE TABLE books (
+--   id SERIAL PRIMARY KEY,
+--   name VARCHAR(50),
+--   author_id INTEGER REFERENCES authors(id)
+-- );
+
+-- INSERT INTO authors (name)
+-- VALUES ('JK Rowling'), ('Stephen King'), ('Agatha Christie'), ('Dr Seus');
+
+-- INSERT INTO books (name, author_id)
+-- VALUES ('Chamber of Secrets', 1), ('Prisoner of Azkaban', 1), ('The Dark Tower', 2), ('Murder At the Links', 3), ('Affair at Styles', 3), ('Cat in the Hat', 4);
+
+
+SELECT author_id, COUNT(*)
+FROM books
+GROUP BY author_id;
+
