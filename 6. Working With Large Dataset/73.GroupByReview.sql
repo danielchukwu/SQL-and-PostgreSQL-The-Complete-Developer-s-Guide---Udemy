@@ -8,3 +8,11 @@
 -- 3      4          6        false
 -- 4      5          3        true
 -- 5      1          1        false
+
+
+-- solution
+
+
+SELECT paid, COUNT(*)
+FROM orders
+GROUP BY paid
