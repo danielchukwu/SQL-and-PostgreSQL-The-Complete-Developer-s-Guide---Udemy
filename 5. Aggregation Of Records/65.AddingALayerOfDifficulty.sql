@@ -39,3 +39,10 @@
 -- INSERT INTO books (name, author_id)
 -- VALUES ('Chamber of Secrets', 1), ('Prisoner of Azkaban', 1), ('The Dark Tower', 2), ('Murder At the Links', 3), ('Affair at Styles', 3), ('Cat in the Hat', 4);
 
+
+SELECT authors.name, COUNT(*)
+FROM books
+JOIN authors ON authors.id = books.author_id
+GROUP BY authors.name
+
+-- SELECT * FROM books JOIN authors ON authors.id = books.author_id
