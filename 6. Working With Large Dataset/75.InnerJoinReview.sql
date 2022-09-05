@@ -10,6 +10,7 @@
 -- 4      5          3        true
 -- 5      1          1        false
 
+--           users
 -- id  first_name  last_name
 -- 1      iva       lindgren
 -- 2    ignatius     johns
