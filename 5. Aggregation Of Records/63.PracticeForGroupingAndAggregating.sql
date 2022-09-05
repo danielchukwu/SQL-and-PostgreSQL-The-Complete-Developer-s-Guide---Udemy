@@ -1,6 +1,3 @@
--- LESSON 65
-
-
 -- SQL - {}
 -- Program: This is the same exercise as the last one, but this time we want to print out some information from both tables!
 -- Write a query that will print an author's id and the number of books they have authored
