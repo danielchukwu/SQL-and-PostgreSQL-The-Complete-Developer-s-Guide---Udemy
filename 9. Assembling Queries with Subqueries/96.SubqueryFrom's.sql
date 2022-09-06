@@ -8,3 +8,15 @@
 -- GalaxyS          Samsung            299           2359
 -- S5620            Samsung            250           2385 
 -- N8               Nokia              150           7543
+
+
+
+-- solution
+
+
+SELECT MAX(avg)
+FROM (
+    SELECT manufacturer, AVG(price)
+    FROM phones
+    GROUP BY manufacturer
+) AS avgerage_sales
