@@ -1,0 +1,4 @@
+-- SQL - {}
+-- Program: Write a query that prints the name and price for each phone. In addition, print
+--          out the ratio of the phones price against max price of all phones. Rename 
+--          this third column to price_ratio
