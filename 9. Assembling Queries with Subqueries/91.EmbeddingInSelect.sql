@@ -33,5 +33,5 @@
 --   ('N8', 'Nokia', 150, 7543);
 
 
-SELECT name, price, price / (SELECT MAX() FROM phones)
+SELECT name, price, price / (SELECT MAX() FROM phones) AS price_ratio
 FROM phones
