@@ -9,3 +9,15 @@
 -- 5      1          1        false
 -- 6      5          3        true
 -- 7      1          1        false
+
+
+
+-- solution
+
+
+SELECT AVG(orders_count)
+FROM (
+  SELECT user_id, COUNT(*) As orders_count
+  FROM orders
+  GROUP BY user_id
+) AS p
