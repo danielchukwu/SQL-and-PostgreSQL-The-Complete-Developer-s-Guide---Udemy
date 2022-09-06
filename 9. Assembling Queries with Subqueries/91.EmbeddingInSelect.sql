@@ -31,3 +31,7 @@
 --   ('GalaxyS', 'Samsung', 299, 2359),
 --   ('S5620', 'Samsung', 250, 2385),
 --   ('N8', 'Nokia', 150, 7543);
+
+
+SELECT name, price, price / (SELECT MAX() FROM phones)
+FROM phones
