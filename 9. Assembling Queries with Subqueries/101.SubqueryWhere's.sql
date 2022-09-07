@@ -1,0 +1,3 @@
+-- SQL - {}
+-- problem: Write a query that prints out the name and price of phones that have
+--          a price greater than the Samsung S5620
