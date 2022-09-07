@@ -12,3 +12,15 @@
 -- 5    Fish     Tools       796    10
 -- 6    Mouse    Grocery     989    11
 -- 7    Computer Home        298    2
+
+
+-- solution
+
+
+SELECT name, price
+FROM products
+WHERE price > SOME (
+  SELECT price
+  FROM products
+  WHERE department = 'Industrial'
+);
