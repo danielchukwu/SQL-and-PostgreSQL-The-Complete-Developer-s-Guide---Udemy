@@ -1,6 +1,6 @@
 -- SQL - {}
--- problem: show the name of all products with a price greater than 
---          the average product price
+-- problem: show the name, department, and price of products that are more expensive
+--          than all products in the industrial department
 
 
 --              products
@@ -12,4 +12,17 @@
 -- 5    Fish     Tools       796    10
 -- 6    Mouse    Grocery     989    11
 -- 7    Computer Home        298    2
+
+
+-- solution
+
+
+SELECT name, department, price 
+FROM products
+WHERE price > ALL (
+   SELECT MAX(price)
+   FROM products
+   WHERE department = 'Industrial'
+) AND department != 'Industrial';
+
 
