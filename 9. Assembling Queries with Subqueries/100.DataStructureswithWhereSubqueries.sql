@@ -14,3 +14,13 @@
 -- 7    Computer Home        298    2
 
 
+-- solution
+
+
+SELECT name
+FROM products
+WHERE price > (
+   SELECT AVG(price)
+   FROM products
+)
+OFFSET 2 
