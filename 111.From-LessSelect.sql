@@ -10,3 +10,11 @@
 -- S5620            Samsung            250           2385 
 -- N8               Nokia              150           7543
 
+
+
+-- solution
+
+
+SELECT (SELECT MAX(price) FROM phones) AS max_price, 
+      (SELECT MIN(price) FROM phones) AS min_price, 
+      (SELECT AVG(price) FROM phones) AS avg_price;
