@@ -12,3 +12,16 @@
 -- 6    Mouse    Grocery     989    11        |
 -- 7    Computer Outdoors    298    2         |
 
+
+
+-- solution
+
+
+
+
+SELECT name, (
+   SELECT COUNT(*)
+   FROM orders AS o
+   WHERE o.product_id = p1.id
+)
+FROM products AS p1
