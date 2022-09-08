@@ -20,7 +20,7 @@
 SELECT name, department, price
 FROM products AS p1
 WHERE price = (
-  SELECT Max(price)
-  FROM products AS p2
-  WHERE p1.department = p2.department
+   SELECT Max(price)
+   FROM products AS p2
+   WHERE p1.department = p2.department
 );
