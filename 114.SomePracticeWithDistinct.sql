@@ -8,3 +8,11 @@
 -- GalaxyS          Samsung            299           2359
 -- S5620            Samsung            250           2385 
 -- N8               Nokia              150           7543
+
+
+
+-- solution
+
+
+SELECT COUNT(DISTINCT(manufacturer))
+FROM phones;
