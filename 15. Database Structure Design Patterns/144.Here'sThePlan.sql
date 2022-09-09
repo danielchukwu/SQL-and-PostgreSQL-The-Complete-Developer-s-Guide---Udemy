@@ -41,3 +41,5 @@ TABLE comments {
   updated_at timestamp
   created_at timestamp
 }
+
+-- DONE
