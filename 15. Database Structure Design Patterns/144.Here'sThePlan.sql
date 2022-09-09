@@ -31,3 +31,6 @@ TABLE posts {
   updated_at timestamp
   created_at timestamp
 }
+
+TABLE comments {
+}
