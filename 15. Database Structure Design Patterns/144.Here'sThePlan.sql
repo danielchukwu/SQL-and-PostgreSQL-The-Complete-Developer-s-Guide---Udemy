@@ -24,4 +24,10 @@ TABLE users {
 }
 
 TABLE posts {
+  id int [pk, increment]
+  url varchar(200)
+  user_id int [ref: > users.id]
+  
+  updated_at timestamp
+  created_at timestamp
 }
