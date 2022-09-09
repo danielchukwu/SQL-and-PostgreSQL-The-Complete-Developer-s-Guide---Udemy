@@ -13,3 +13,6 @@
 
 -- solution
 
+
+TABLE users {
+}
