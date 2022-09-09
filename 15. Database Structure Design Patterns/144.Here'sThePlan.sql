@@ -1,0 +1,2 @@
+--SQL - {}
+--Program: using dbdiagram.io/d/ website to create all 3 tables (users, posts, comments) for our instagram database application
