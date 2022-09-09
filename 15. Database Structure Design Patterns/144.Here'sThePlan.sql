@@ -22,3 +22,6 @@ TABLE users {
   updated_at timestamp
   created_at timestamp
 }
+
+TABLE posts {
+}
