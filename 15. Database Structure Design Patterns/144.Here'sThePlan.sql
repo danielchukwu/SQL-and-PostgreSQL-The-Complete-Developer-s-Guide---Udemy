@@ -9,3 +9,7 @@
 -- username     |url          |text
 -- email        |user_id      |user_id
 --                            |post_id
+
+
+-- solution
+
