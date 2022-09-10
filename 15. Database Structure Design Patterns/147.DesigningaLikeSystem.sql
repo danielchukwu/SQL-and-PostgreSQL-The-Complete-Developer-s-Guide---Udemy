@@ -22,3 +22,6 @@
 --   post_id INTEGER REFERENCES posts(id)
 -- );
 
+
+-- INSERT INTO users (username)
+-- VALUES ('Jakob'), ('Tim'), ('luka'), ('sarah'), ('jeffery');
