@@ -15,3 +15,10 @@
 --   id SERIAL PRIMARY KEY,
 --   url VARCHAR(200)
 -- );
+
+-- CREATE TABLE likes (
+--   id SERIAL PRIMARY KEY,
+--   user_id INTEGER REFERENCES users(id),
+--   post_id INTEGER REFERENCES posts(id)
+-- );
+
