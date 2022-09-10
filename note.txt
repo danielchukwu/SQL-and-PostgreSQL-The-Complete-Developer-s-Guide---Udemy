@@ -1,1 +1,2 @@
 ON DELETE CASCADE -> lecture 36
+Data type (Numbers, character, Date/Time) -> lecture 123
