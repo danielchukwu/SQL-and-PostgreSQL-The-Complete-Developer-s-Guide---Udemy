@@ -67,3 +67,9 @@
 -- ORDER BY COUNT(*) DESC
 -- LIMIT 5
 
+-- Question 4. Write a query that shows url of posts that user with id = 4 liked
+-- SELECT url
+-- FROM posts
+-- JOIN likes ON likes.post_id = posts.id
+-- WHERE user_id = 4
+
