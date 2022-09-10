@@ -25,3 +25,6 @@
 
 -- INSERT INTO users (username)
 -- VALUES ('Jakob'), ('Tim'), ('luka'), ('sarah'), ('jeffery');
+
+-- INSERT INTO posts (url)
+-- VALUES ('img1.jpg'), ('img2.jpg'), ('img3.jpg'), ('img4.jpg'), ('img5.jpg');
