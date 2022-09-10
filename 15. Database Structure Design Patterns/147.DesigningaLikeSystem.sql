@@ -49,3 +49,13 @@
 -- JOIN users ON users.id = l1.user_id
 -- WHERE post_id = 3
 
+-- Question 3. Write a query that returns id's of top 5 most liked posts
+-- 1
+-- SELECT post_id
+-- FROM (
+--   SELECT post_id, COUNT(*) AS likes_count
+--   FROM likes
+--   GROUP BY post_id
+-- ) AS l1
+-- ORDER BY l1.likes_count DESC
+-- LIMIT 5;
