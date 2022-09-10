@@ -31,3 +31,10 @@
 
 -- INSERT INTO likes (user_id, post_id)
 -- VALUES (3,5), (1,1), (4,2), (3,3), (3,5);
+
+
+
+-- SELECT * FROM users
+
+
+
