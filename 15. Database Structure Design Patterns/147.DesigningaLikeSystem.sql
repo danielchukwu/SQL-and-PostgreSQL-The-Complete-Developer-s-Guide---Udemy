@@ -43,3 +43,9 @@
 -- FROM likes
 -- WHERE post_id = 5;
 
+-- Question 2. Write a query to show the username of people who like post with id = 3
+-- SELECT username
+-- FROM likes AS l1
+-- JOIN users ON users.id = l1.user_id
+-- WHERE post_id = 3
+
