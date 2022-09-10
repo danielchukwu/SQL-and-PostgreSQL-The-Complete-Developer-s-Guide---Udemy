@@ -59,3 +59,11 @@
 -- ) AS l1
 -- ORDER BY l1.likes_count DESC
 -- LIMIT 5;
+
+-- 2
+-- SELECT post_id, COUNT(*)
+-- FROM likes
+-- GROUP BY post_id
+-- ORDER BY COUNT(*) DESC
+-- LIMIT 5
+
