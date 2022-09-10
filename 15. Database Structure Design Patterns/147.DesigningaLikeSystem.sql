@@ -38,3 +38,8 @@
 
 
 
+-- Question 1. Write a query to find the number of likes on posts with id 3
+-- SELECT COUNT(*)
+-- FROM likes
+-- WHERE post_id = 5;
+
