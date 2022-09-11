@@ -59,3 +59,12 @@
 --   created_at timestamp
 --   updated_at timestamp
 -- }
+
+-- TABLE caption_tags {
+--   id int [pk, increment]
+--   user_id int [ref: > users.id]
+--   post_id int [ref: > posts.id]
+  
+--   created_at timestamp
+-- }
+
