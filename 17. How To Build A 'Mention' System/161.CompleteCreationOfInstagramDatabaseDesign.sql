@@ -86,3 +86,11 @@
 --   hashtag_id int [ref: > hashtags.id]
 --   post_id int [ref: > posts.id]
 -- }
+
+-- TABLE followers {
+--   id serial [pk, increment]
+--   leader_id int [ref: > users.id]
+--   follower_id int [ref: > users.id]
+  
+--   created_at timestamp
+-- }
