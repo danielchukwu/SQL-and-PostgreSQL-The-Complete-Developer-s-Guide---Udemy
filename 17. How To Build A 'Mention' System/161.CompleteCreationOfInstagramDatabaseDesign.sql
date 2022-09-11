@@ -27,3 +27,13 @@
 --   updated_at timestamp
 --   created_at timestamp
 -- }
+
+-- TABLE comments {
+--   id int [pk, increment]
+--   text varchar(50)
+--   user_id int [ref: > users.id]
+--   post_id int [ref: > posts.id]
+  
+--   updated_at timestamp
+--   created_at timestamp
+-- }
