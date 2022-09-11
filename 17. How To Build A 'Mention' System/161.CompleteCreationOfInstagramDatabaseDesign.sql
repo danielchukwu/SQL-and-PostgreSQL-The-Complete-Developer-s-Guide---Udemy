@@ -15,3 +15,15 @@
 --   updated_at timestamp
 --   created_at timestamp
 -- }
+
+-- TABLE posts {
+--   id int [pk, increment]
+--   url varchar(200)
+--   user_id int [ref: > users.id]
+--   caption varchar(240)
+--   lat REAL
+--   lng REAL
+  
+--   updated_at timestamp
+--   created_at timestamp
+-- }
