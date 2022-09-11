@@ -37,3 +37,14 @@
 --   updated_at timestamp
 --   created_at timestamp
 -- }
+
+-- // next day
+
+-- TABLE likes {
+--   id int [pk, increment]
+--   user_id int [ref: > users.id]
+--   post_id int [ref: > posts.id]
+--   comment_id int [ref: > comments.id]
+  
+--   created_at timestamp
+-- }
