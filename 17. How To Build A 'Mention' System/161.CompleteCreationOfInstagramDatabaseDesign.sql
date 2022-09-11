@@ -74,3 +74,9 @@
   
 --   created_at timestamp
 -- }
+
+-- TABLE hastags_posts {
+--   id serial [pk, increment]
+--   hashtag_id int [ref: > hashtags.id]
+--   post_id int [ref: > posts.id]
+-- }
