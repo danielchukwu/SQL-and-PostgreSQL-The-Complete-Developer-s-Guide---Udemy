@@ -68,3 +68,9 @@
 --   created_at timestamp
 -- }
 
+-- TABLE hashtags {
+--   id int [pk, increment]
+--   title varchar(20)
+  
+--   created_at timestamp
+-- }
