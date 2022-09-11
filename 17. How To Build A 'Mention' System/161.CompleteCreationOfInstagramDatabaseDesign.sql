@@ -1,5 +1,6 @@
 -- SQL - {}
 -- program: analyze instagram and step by step build a complete database design for the features you notice
+-- tool: dbdiagram.io
 
 
 
@@ -10,7 +11,12 @@
 -- TABLE users {
 --   id integer [pk, increment]
 --   username varchar(50)
---   email varchar(50)
+--   bio varchar(400)
+--   avatar varchar(200)
+--   phone varchar(25)
+--   email varchar(40)
+--   password varchar(50)
+--   status varchar(15)
   
 --   updated_at timestamp
 --   created_at timestamp
