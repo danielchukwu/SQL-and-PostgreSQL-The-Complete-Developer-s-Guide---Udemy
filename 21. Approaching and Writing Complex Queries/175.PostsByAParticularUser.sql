@@ -12,3 +12,11 @@
 -- 6    Ramona92   null       online   |6    #content   199
 
 
+
+-- solution
+
+
+SELECT username, caption
+FROM users
+JOIN posts ON posts.user_id = users.id
+WHERE users.id = 200;
