@@ -1,0 +1,2 @@
+-- SQL - {}
+-- problem: select the 3 users with the highest ID's from the users table
