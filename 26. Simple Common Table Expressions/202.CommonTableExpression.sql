@@ -29,3 +29,9 @@ WHERE tags.created_at < '2010-01-07';
 
 
 -- Exercise2: Improve this using simple common table expression
+WITH tags AS (
+   SELECT user_id, created_at FROM caption_tags
+   UNION ALL
+   SELECT user_id, created_at FROM photo_tags
+)
+
