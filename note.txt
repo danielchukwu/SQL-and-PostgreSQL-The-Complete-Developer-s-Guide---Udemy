@@ -2,3 +2,4 @@ ON DELETE CASCADE -> lecture 36
 Data type (Numbers, character, Date/Time) -> lecture 123
 Index(enable faster lookup for a particular column) -> lecture 187 - 188. Actually begun from lecture 179 to 
 Basic Query Tuning(planner and all that) -> lecture 193
+Unions -> lecture 82
