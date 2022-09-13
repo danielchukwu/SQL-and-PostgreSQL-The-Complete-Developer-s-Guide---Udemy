@@ -1,3 +1,0 @@
--- SQL - {}
--- Exercise: Show the username of users who where tagged in a caption or photo befor january 7th 2010. 
--- Also show the date they were tagged
