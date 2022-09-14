@@ -1,5 +1,5 @@
-SQL -{}
-Exercise: Show the most popular users - the users who were tagged the most 
+-- SQL -{}
+-- Exercise: Show the most popular users - the users who were tagged the most 
 
 
 --        users          | caption_tags    | photo_tags
@@ -11,3 +11,18 @@ Exercise: Show the most popular users - the users who were tagged the most
 -- 5    Kevin Hart       |5       5        |5       2
 -- 6    Snoop Dog        |6       4        |6       1
 
+
+-- solution
+
+
+WITH tags AS (
+	SELECT user_id FROM caption_tags
+	UNION ALL
+	SELECT user_id FROM photo_tags
+)
+
+SELECT username, COUNT(*) AS most_popular_user
+FROM users
+JOIN tags ON tags.user_id = users.id
+GROUP BY username
+ORDER BY most_popular_user DESC
