@@ -1,0 +1,2 @@
+-- SQL - {}
+-- Exercise: Create a view named tag by combining photo_tags and caption_tags
