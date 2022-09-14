@@ -10,3 +10,13 @@
 -- 5       5        |5       2
 -- 6       4        |6       1
 
+-- solution
+
+
+-- CREATE VIEW tags AS (
+-- 	SELECT id, user_id, post_id, created_at, 'caption_tag' AS type FROM caption_tags
+-- 	UNION ALL
+-- 	SELECT id, user_id, post_id, created_at, 'photo_tag' AS type FROM photo_tags
+-- )
+
+SELECT * FROM tags WHERE type = 'photo_tag'
