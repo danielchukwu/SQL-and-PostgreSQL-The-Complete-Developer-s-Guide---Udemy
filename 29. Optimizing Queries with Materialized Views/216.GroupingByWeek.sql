@@ -23,3 +23,21 @@
 -- LEFT JOIN comments ON comments.id = likes.comment_id
 -- GROUP BY week
 -- ORDER BY week
+
+
+
+-- Question 2: improve the performance of our database using a materialized view on the above time consuming query
+-- CREATE MATERIALIZED VIEW weekly_likes AS (
+-- 	SELECT 
+-- 	  date_trunc('week', COALESCE(posts.created_at, comments.created_at)) AS week,
+-- 	  COUNT(posts.id) AS post_likes,
+-- 	  COUNT(comments.id) AS comment_likes
+-- 	FROM likes
+-- 	LEFT JOIN posts ON posts.id = likes.post_id
+-- 	LEFT JOIN comments ON comments.id = likes.comment_id
+-- 	GROUP BY week
+-- 	ORDER BY week
+-- ) AS DATA;
+
+SELECT *
+FROM weekly_likes
