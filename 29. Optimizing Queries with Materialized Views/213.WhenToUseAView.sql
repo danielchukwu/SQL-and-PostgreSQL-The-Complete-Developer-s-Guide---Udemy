@@ -35,3 +35,10 @@
 -- FROM hashtags_posts
 -- JOIN recent_posts ON recent_posts.id = hashtags_posts.post_id
 -- JOIN hashtags ON hashtags_posts.hashtag_id = hashtags.id
+
+-- 5. Show the average number of hashtags used in the 10 most recent posts. INCORRECT SOLUTION
+-- SELECT recent_posts.id, COUNT(*)
+-- FROM hashtags_posts
+-- JOIN recent_posts ON recent_posts.id = hashtags_posts.post_id
+-- GROUP BY recent_posts.id
+
