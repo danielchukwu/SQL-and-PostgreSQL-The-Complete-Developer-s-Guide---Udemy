@@ -23,3 +23,10 @@
 -- FROM likes
 -- JOIN recent_posts ON recent_posts.id = likes.post_id
 -- GROUP BY recent_posts.id
+
+-- 3. Show the users who were tagged in the 10 most recent posts
+-- SELECT username
+-- FROM photo_tags
+-- JOIN recent_posts ON recent_posts.id = photo_tags.post_id
+-- JOIN users ON users.id = photo_tags.user_id
+
