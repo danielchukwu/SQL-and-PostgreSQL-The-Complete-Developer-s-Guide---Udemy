@@ -12,3 +12,8 @@
 -- 	ORDER BY created_at DESC
 -- 	LIMIT 10
 -- )
+
+-- 1. Show the users who created the 10 most recent posts
+-- SELECT DISTINCT users.username
+-- FROM recent_posts
+-- JOIN users ON users.id = recent_posts.user_id
