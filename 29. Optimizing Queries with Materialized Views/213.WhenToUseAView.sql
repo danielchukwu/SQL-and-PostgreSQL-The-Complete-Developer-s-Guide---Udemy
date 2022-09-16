@@ -17,3 +17,9 @@
 -- SELECT DISTINCT users.username
 -- FROM recent_posts
 -- JOIN users ON users.id = recent_posts.user_id
+
+-- 2. show the number of likes for each of the 10 most recent posts recieved
+-- SELECT recent_posts.id, COUNT(*)
+-- FROM likes
+-- JOIN recent_posts ON recent_posts.id = likes.post_id
+-- GROUP BY recent_posts.id
