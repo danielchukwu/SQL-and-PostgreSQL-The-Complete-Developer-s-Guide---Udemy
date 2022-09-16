@@ -30,3 +30,8 @@
 -- JOIN recent_posts ON recent_posts.id = photo_tags.post_id
 -- JOIN users ON users.id = photo_tags.user_id
 
+-- 4. Show the hashtags used by the 10 most recent posts
+-- SELECT DISTINCT title
+-- FROM hashtags_posts
+-- JOIN recent_posts ON recent_posts.id = hashtags_posts.post_id
+-- JOIN hashtags ON hashtags_posts.hashtag_id = hashtags.id
