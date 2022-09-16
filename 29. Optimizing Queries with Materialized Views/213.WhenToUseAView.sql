@@ -42,3 +42,8 @@
 -- JOIN recent_posts ON recent_posts.id = hashtags_posts.post_id
 -- GROUP BY recent_posts.id
 
+-- 6. Show the total number of comments the 10 most recent posts recieved
+SELECT recent_posts.id, COUNT(*)
+FROM comments
+JOIN recent_posts ON recent_posts.id = comments.post_id
+GROUP BY recent_posts.id
