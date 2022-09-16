@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "migrate": "npm-pg-migrate"
+    "migrate": "node-pg-migrate"
   },
   "keywords": [],
   "author": "",
