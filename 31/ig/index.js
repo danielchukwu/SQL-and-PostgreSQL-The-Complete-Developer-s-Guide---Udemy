@@ -1,3 +1,4 @@
+const { urlencoded } = require('express');
 const express = require('express');
 const pg = require('pg');
 
@@ -12,11 +13,13 @@ const pool = new pg.Pool({
 
 // pool.query(`SELECT 1+1 AS sum;`).then((res) => console.log(res));
 
+const app = express();
+app.use(urlencoded({ extended : true }));
 
 app.get('/posts', async (req, res) => {
    const { rows } = pool.query(`
       SELECT * FROM posts;
-   `)
+   `);
 
    res.send(`
       <table>
@@ -52,5 +55,9 @@ app.get('/posts', async (req, res) => {
          </div>
          <button type="submit" >Create</button>
       </form>
-   `)
+   `);
+});
+
+app.listen(3005, () => {
+   console.log('Listening on port 3005');
 })
