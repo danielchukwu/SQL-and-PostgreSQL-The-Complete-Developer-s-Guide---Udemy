@@ -10,4 +10,4 @@ const pool = new pg.Pool({
    password: '',
 });
 
-pool.query(`SELECT 1+1;`).then((res) => console.log(res));
+pool.query(`SELECT 1+1 AS sum;`).then((res) => console.log(res));
