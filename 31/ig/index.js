@@ -8,16 +8,16 @@ const pool = new pg.Pool({
    port: 5432,
    database: 'socialnetwork',
    user: 'postgres',
-   password: '',
+   password: '',       // remove pass
 });
 
 // pool.query(`SELECT 1+1 AS sum;`).then((res) => console.log(res));
 
 const app = express();
-app.use(urlencoded({ extended : true }));
+app.use(express.urlencoded({ extended : true }));
 
 app.get('/posts', async (req, res) => {
-   const { rows } = pool.query(`
+   const { rows } = await pool.query(`
       SELECT * FROM posts;
    `);
 

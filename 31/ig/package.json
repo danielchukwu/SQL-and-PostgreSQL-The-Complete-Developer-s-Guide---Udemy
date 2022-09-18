@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "migrate": "node-pg-migrate"
+    "migrate": "node-pg-migrate",
+    "devstart" : "nodemon index.js"
   },
   "keywords": [],
   "author": "",
