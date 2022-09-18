@@ -39,5 +39,18 @@ app.get('/posts', async (req, res) => {
             })}
          </tbody>
       </table>
+
+      <form method="POST">
+         <h3>Create Post</h3>
+         <div>
+            <label>Lat</label>
+            <input type="text" name="lat" />
+         </div>
+         <div>
+            <label>Lng</label>
+            <input type="text" name="lng" />
+         </div>
+         <button type="submit" >Create</button>
+      </form>
    `)
 })
