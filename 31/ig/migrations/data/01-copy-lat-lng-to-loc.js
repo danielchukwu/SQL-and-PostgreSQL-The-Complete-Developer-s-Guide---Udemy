@@ -8,4 +8,11 @@ const pool = new pg.Pool({
    password: ''      // TODO: remove
 })
 
-pool.query(`SELECT * FROM posts`).then(res => console.log(res))
+// pool.query(`SELECT * FROM posts`).then(res => console.log(res))
+
+// perform data migration
+pool.query(`
+   UPDATE posts
+   SET loc = POINT(lat, lng)
+   WHERE loc = NULL;
+`)
