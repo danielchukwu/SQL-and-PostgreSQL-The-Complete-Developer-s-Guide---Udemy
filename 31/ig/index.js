@@ -8,7 +8,7 @@ const pool = new pg.Pool({
    port: 5432,
    database: 'socialnetwork',
    user: 'postgres',
-   password: 'Danielcarl4u_',       // TODO: remove 
+   password: '',       // TODO: remove 
 });
 
 // pool.query(`SELECT 1+1 AS sum;`).then((res) => console.log(res));
@@ -60,17 +60,16 @@ app.route('/posts')
       `);
    })
 
-   .post((req, res) => {
+   .post( async (req, res) => {
       console.log('Post request recieved...')
-      const lat = req.body.lat
-      const lng = req.body.lng
+      const {lat, lng} = req.body
       
-      pool.query(`
-         INSERT INTO posts (lat, lng)
-         VALUES (${lat}, ${lng})
-      `)
+      await pool.query(`
+         INSERT INTO posts (lat, lng, loc)
+         VALUES ($1, $2, $3)
+      `, [lat, lng, `${lat}, ${lng}`])
 
-      res.send('POST CREATED!')
+      res.redirect('/posts')
    })
 
 app.listen(3005, () => {
