@@ -5,7 +5,7 @@ const pool = new pg.Pool({
    port: 5432,
    database: 'socialnetwork',
    user: 'postgres',
-   password: ''      // TODO: remove
+   password: ''      // TODO: add your password(the one from postgres installation)
 })
 
 // pool.query(`SELECT * FROM posts`).then(res => console.log(res))
