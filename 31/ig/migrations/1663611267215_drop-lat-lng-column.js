@@ -12,5 +12,8 @@ exports.up = pgm => {
 
 exports.down = pgm => {
    pgm.sql(`
+      ALTER TABLE posts
+      ADD COLUMN lat NUMERIC,
+      ADD COLUMN lng NUMERIC;
    `)
 };
