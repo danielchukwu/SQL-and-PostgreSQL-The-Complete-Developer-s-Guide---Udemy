@@ -14,7 +14,7 @@ const pool = new pg.Pool({
 pool.query(`
    UPDATE posts
    SET loc = POINT(lat, lng)
-   WHERE loc = NULL;
+   WHERE loc IS NULL;
 `).then((res) => {
    console.log('data migration successful🏌️‍♂️')
 }).catch ((err) => console.error(err.message))
