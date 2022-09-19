@@ -2,6 +2,15 @@
 
 exports.shorthands = undefined;
 
-exports.up = pgm => {};
+exports.up = pgm => {
+   pgm.sql(`
+      ALTER TABLE posts
+      DROP COLUMN lat,
+      DROP COLUMN lng;
+   `)
+};
 
-exports.down = pgm => {};
+exports.down = pgm => {
+   pgm.sql(`
+   `)
+};
