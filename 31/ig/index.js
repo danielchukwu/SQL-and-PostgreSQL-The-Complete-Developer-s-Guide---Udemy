@@ -8,7 +8,7 @@ const pool = new pg.Pool({
    port: 5432,
    database: 'socialnetwork',
    user: 'postgres',
-   password: '',       // remove pass
+   password: 'Danielcarl4u_',       // TODO: remove 
 });
 
 // pool.query(`SELECT 1+1 AS sum;`).then((res) => console.log(res));
@@ -41,7 +41,7 @@ app.route('/posts')
                            <td>${row.lng}</td>
                         </tr>
                      `
-               })}
+               }).join('')}
             </tbody>
          </table>
 
