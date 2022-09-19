@@ -5,7 +5,7 @@ exports.shorthands = undefined;
 exports.up = pgm => {
    pgm.sql(`
       ALTER TABLE posts
-      ADD COLUMN loc;
+      ADD COLUMN loc POINT;
    `)
 };
 
