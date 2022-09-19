@@ -37,8 +37,8 @@ app.route('/posts')
                      return `
                         <tr>
                            <td>${row.id}</td>
-                           <td>${row.lat}</td>
-                           <td>${row.lng}</td>
+                           <td>${row.loc.x}</td>
+                           <td>${row.loc.y}</td>
                         </tr>
                      `
                }).join('')}
@@ -64,10 +64,7 @@ app.route('/posts')
       console.log('Post request recieved...')
       const {lat, lng} = req.body
       
-      await pool.query(`
-         INSERT INTO posts (lat, lng, loc)
-         VALUES ($1, $2, $3)
-      `, [lat, lng, `${lat}, ${lng}`])
+      await pool.query(`INSERT INTO posts (loc) VALUES ($1) `, [`${lat}, ${lng}`])
 
       res.redirect('/posts')
    })
