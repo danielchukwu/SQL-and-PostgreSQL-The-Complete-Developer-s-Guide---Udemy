@@ -7,3 +7,5 @@ const pool = new pg.Pool({
    user: 'postgres',
    password: ''      // TODO: remove
 })
+
+pool.query(`SELECT * FROM posts`).then(res => console.log(res))
