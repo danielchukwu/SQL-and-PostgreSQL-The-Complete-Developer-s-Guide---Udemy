@@ -7,6 +7,9 @@ SELECT * FROM pg_extension
 -- Install uuid
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
+-- Uninstall uuid
+DROP EXTENSION IF EXISTS "uuid-ossp";
+
 -- Create: This is how we could add a UUID to our table using uuid_generate_v4
 CREATE TABLE PINK_FLOYD (
 	id uuid DEFAULT uuid_generate_v4 (),
